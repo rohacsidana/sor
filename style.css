@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+body {
+  background-image: url(sor/design/teglafal.jpg);
+}
+main {
+  font-family: "Marcellus", serif;
+  color: beige;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "h h h"
+    "a a n"
+    "f f f";
+  background-color: #181818;
+  max-width: 1000px;
+  padding: 25px;
+  width: 80%;
+}
+main p,
+main li,
+footer {
+  font-size: 10pt;
+}
+h1 {
+  padding-left: 40px;
+}
+header {
+  grid-area: h;
+  background-image: url(sor/design/beer-new_401732638.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  font-weight: bolder;
+}
+article {
+  grid-area: a;
+  display: grid;
+  grid-template-areas:
+    "h1 h1"
+    "d1 d2";
+}
+h2 {
+  grid-area: h1;
+}
+#div1 {
+  grid-area: d1;
+}
+#div2 {
+  grid-area: d2;
+}
+article img {
+  max-width: 200px;
+  border-style: solid;
+  border-width: 0.5px 0.5px 0.5px 0.5px;
+  padding: 5px;
+}
+nav {
+  grid-area: n;
+  background-color: rgb(34, 41, 34);
+  padding: 10px;
+  margin: 15px;
+}
+footer {
+  grid-area: f;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(34, 41, 34);
+  color: rgb(163, 189, 167);
+}
+nav li {
+  border-radius: 25px;
+  border: 2px solid rgb(163, 189, 167);
+  padding: 20px;
+  width: 50px;
+  height: 18px;
+  margin: 10px;
+}
+nav ul {
+  list-style-type: none;
+  padding-left: 10px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: rgb(163, 189, 167);
+  font-weight: bolder;
+}
+a:hover {
+  color: rgb(34, 41, 34);
+}
+li:hover {
+  background-color: beige;
+}
+article ul {
+  list-style-image: url(sor/kepek/symbol2.png);
+}
+table {
+  border-collapse: collapse;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+tr td,
+tr th {
+  border: 0.5px solid beige;
+  text-align: center;
+}
+table tr:nth-child(even) {
+  background-color: rgb(34, 41, 34);
+}
+table tr:hover {
+  color: #181818;
+  background-color: beige;
+  font-weight: bolder;
+}
+@media screen and (max-width: 800px) {
+  main {
+    grid-template-areas:
+      "h"
+      "a"
+      "n"
+      "f";
+  }
+  article {
+    grid-template-rows: 1fr 1fr;
+  }
+}
